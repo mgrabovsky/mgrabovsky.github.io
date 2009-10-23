@@ -1,0 +1,43 @@
+@import url(fonts/stylesheet.css);
+
+body {
+	color: #1a1a1a;
+	font: normal normal 11pt/1.6em 'Droid Sans', Corbel, Verdana, sans-serif;
+	background: #ddd url(bg.png) repeat;
+}
+h1, h2, #menu {
+	color: #555;
+	font: italic 1.4em/1.6em 'Droid Serif', Cambria, Georgia, serif;
+}
+h1 {
+	color: #222;
+	font-size: 2em;
+}
+#body a {
+	color: #b33;
+	padding: 0 2px;
+	border-bottom: 1px solid #b33;
+}
+#body a:hover {
+	color: #f2f2f2;
+	background-color: #b33;
+	border-bottom: none;
+}
+
+#main_container { margin-top: 40px; }
+
+#menu {
+	height: 150px;
+	background-color: #f2f2f2;
+	padding: 20px 10px;
+}
+#menu .current { color: #222; }
+#menu a:hover { color: #b33; }
+
+#body {
+	background-color: #f2f2f2;
+	padding: 30px 20px;
+}
+#body > h2+p { margin-top: 40px; }
+#body p { margin-bottom: 1.6em; }
+#body p:last-child { margin-bottom: 0; }
