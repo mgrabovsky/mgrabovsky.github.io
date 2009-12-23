@@ -1,15 +1,15 @@
-@import url(reset.css);
-@import url(grid.css);
-@import url(fonts/stylesheet.css);
+@import url('reset.css');
+@import url('grid.css');
+/*@import url(fonts/stylesheet.css);*/
 
 body {
 	color: #1a1a1a;
 	font: normal normal 11pt/1.6em 'Droid Sans', Corbel, Verdana, sans-serif;
-	background: #ddd url(bg.png) repeat;
+	background: url(bg.png) #ddd repeat;
 }
 h1, h2, #menu {
 	color: #555;
-	font: italic 1.4em/1.6em 'Droid Serif', Cambria, Georgia, serif;
+	font: italic 1.4em/1.6em 'Meta Serif', 'Droid Serif', Cambria, Georgia, serif;
 }
 h1 {
 	color: #222;
@@ -35,10 +35,45 @@ h1 {
 #menu .current { color: #222; }
 #menu a:hover { color: #b33; }
 
-#body {
+#content {
 	background-color: #f2f2f2;
 	padding: 30px 20px;
 }
-#body > h2+p { margin-top: 40px; }
-#body p { margin-bottom: 1.6em; }
-#body p:last-child { margin-bottom: 0; }
+#content > h2+p { margin-top: 40px; }
+#content p { margin-bottom: 1.6em; }
+#content p:last-child { margin-bottom: 0; }
+
+/* sIFR screen */
+@media screen {
+	.sIFR-flash { visibility: visible !important; margin: 0; }
+	.sIFR-replaced { visibility: visible !important; }
+	span.sIFR-alternate {
+		position: absolute;
+		left: 0; top: 0;
+		width: 0; height: 0;
+		display: block;
+		overflow: hidden;
+	}
+	.sIFR-flash + div[adblocktab=true] { display: none !important; }
+	.sIFR-hasFlash h1, .sIFR-hasFlash h2, .sIFR-hasFlash #menu li { visibility: hidden; }
+	/* Some font size fixes */
+	.sIFR-hasFlash h1 { font-size: 22px; }
+	.sIFR-hasFlash h2, .sIFR-hasFlash #menu { font-size: 15.4px; }
+}
+
+/* sIFR print */
+@media print {
+	.sIFR-flash, .sIFR-flash object, .sIFR-flash embed {
+		display: none !important;
+		height: 0; width: 0;
+		position: absolute;
+		overflow: hidden;
+	}
+	span.sIFR-alternate {
+		visibility: visible !important;
+		display: block !important;
+		position: static !important;
+		left: auto !important;
+		top: auto !important;
+	}
+}
