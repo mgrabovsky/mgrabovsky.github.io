@@ -19,7 +19,7 @@ strong { font-size: .9em; font-weight: bold; text-transform: uppercase; letter-s
 
 #menu { border-bottom: 3px double #999; font-size: .9em; text-transform: uppercase; letter-spacing: 1px; }
 #menu a { color: inherit; }
-#menu li { display: inline-block; border-right: none; padding: 10px 15px; margin-right: 35px; }
+#menu li { display: inline-block; padding: 10px 15px; margin-right: 35px; }
 
 #content { margin: 3.2em 0 0; padding: 0 15px; }
 #content ul { margin-left: 1.6em; }
