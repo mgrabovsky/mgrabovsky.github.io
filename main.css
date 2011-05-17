@@ -1,4 +1,4 @@
-@import url('http://fonts.googleapis.com/css?family=PT+Sans:regular,bold,italic');
+@import url('http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold');
 
 /** Less Framework 4 by Joni Korpi (http://lessframework.com) License:
  * http://creativecommons.org/licenses/MIT/
@@ -87,6 +87,13 @@ p, ul {
 small {
     font-size: 13px;
     line-height: 18px;
+}
+
+em {
+	font-style: italic;
+}
+em {
+	font-style: italic;
 }
 
 strong {
