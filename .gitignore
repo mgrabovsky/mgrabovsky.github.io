@@ -1,0 +1,4 @@
+._*.
+#*
+demo-cache/[0-9a-z]
+test-images
