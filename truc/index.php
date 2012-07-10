@@ -1,1 +1,0 @@
-<?php require 'truc.php'; Truc::run();
