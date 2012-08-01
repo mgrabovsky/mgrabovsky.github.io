@@ -1,4 +1,4 @@
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,700&subset=latin,latin-ext');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700&subset=latin,latin-ext');
 
 /** Less Framework 4 by Joni Korpi (http://lessframework.com) License:
  * http://creativecommons.org/licenses/MIT/
@@ -49,7 +49,7 @@ html {
     background: #e0e0e0;
     color: #444;
     font: 16px/26px 'Open Sans', Calibri, Helvetica, Arial, sans-serif;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 body {
