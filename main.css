@@ -1,9 +1,9 @@
-@import url('http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,700&subset=latin,latin-ext');
 
 /** Less Framework 4 by Joni Korpi (http://lessframework.com) License:
  * http://creativecommons.org/licenses/MIT/
  */
-/* Reset (based off original, combined with Eric Meyer's Reset CSS v2.0 */
+/* Reset (based on original, combined with Eric Meyer's Reset CSS v2.0 */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
 abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub,
 sup, var, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
@@ -36,77 +36,55 @@ a, a:hover, a:active, a:link, a:visited {
     text-decoration: none;
 }
 
-/* Typography */
-html {
-    background: #e5e5e5;
-    color: #444;
-    font: 16px/24px 'PT Sans', Calibri, Arial, sans-serif;
-}
-
-body {
-    border-top: 4px solid #444;
-    background-color: #fafafa;
-}
-
-body:after {
-    content: ".";
-    display: block;
-    visibility: hidden;
-    height: 0;
-    clear: both;
-}
-
-h1, h2, h3 {
-    display: block;
-    margin-bottom: 24px;
-    font-weight: bold;
-}
-
-h1 {
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-}
-
-h2 {
-    color: #999;
-    font-weight: normal;
-    font-style: italic;
-}
-
-h3 {
-    display: block;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-p, ul {
-    margin-bottom: 24px;
-}
-
-small {
-    font-size: 13px;
-    line-height: 18px;
-}
-
 em {
     font-style: italic;
 }
 
 strong {
-    font-size: 13px;
-    line-height: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-weight: 700;
 }
 
-a, a:link, a:visited {
+/* Typography and colours */
+html {
+    background: #e0e0e0;
+    color: #444;
+    font: 16px/26px 'Open Sans', Calibri, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+body {
+    border-top: 6px solid #444;
+    background: #fafafa;
+}
+
+body.profile {
+    /*background: #fafafa url(fleurs.png) 48px 118px no-repeat;*/
+}
+
+h1 {
+    display: inline;
+    font: inherit;
+    color: inherit;
+}
+
+p, ul {
+    margin-bottom: 26px;
+}
+
+.marginalia p, .marginalia ul {
+    margin-bottom: 20px;
+}
+
+a, a:link, a:visited, .menu a:hover {
     color: #d13048;
     -webkit-transition: color .2s ease-in-out;
     -moz-transition: color .2s ease-in-out;
     -o-transition: color .2 ease-in-out;
     transition: color .2s ease-in-out;
+}
+
+.menu a {
+    color: #bbb;
 }
 
 a:hover, a:active {
@@ -120,6 +98,7 @@ img::selection { background: transparent; }
 img::-moz-selection { background: transparent; }
 body { -webkit-tap-highlight-color: rgba(38,164,166,.4); }
 
+
 /** Default Layout: 992px (24px G, 48 M)
 -------------------------------------------------------------------------------
 cols    1     2      3      4      5      6      7      8      9      10
@@ -128,38 +107,94 @@ px      68    160    252    344    436    528    620    712    804    896
 
 body {
     width: 896px;
-    margin: 48px auto 0;
-    padding: 72px 48px 84px;
+    margin: 48px auto;
+    padding: 72px 48px 48px;
     -webkit-text-size-adjust: 100%;
+}
+
+body:after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
 }
 
 .menu {
     float: left;
-    width: 160px;
-    padding: 48px 24px 0 0;
+    width: 712px;
+    margin-left: 184px;
+    clear: both;
 }
 
-.main-content {
+.menu li {
+    display: inline;
+    margin-right: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.central {
     float: left;
     width: 436px;
+    margin-left: 184px;
 }
 
-.main-content ul {
+.central ul {
     list-style: none;
     text-indent: -24px;
 }
 
-.main-content li:before {
+.central li:before {
     content: '\2013';
     padding-right: 12px;
 }
 
-.related-content {
+.marginalia {
     float: left;
     width: 252px;
-    padding: 54px 0 0 24px;
+    padding-top: 4px;
+    margin-left: 24px;
     font-size: 13px;
-    line-height: 18px;
+    line-height: 20px;
+}
+
+.marginalia + .marginalia {
+    padding-top: 20px;
+    border-top: 6px solid #e0e0e0;
+}
+
+.chart .row {
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+.chart .row > div {
+    height: 6px;
+    background: #d13048;
+    text-indent: -9999em;
+    margin-bottom: 6px;
+}
+
+.chart .row > div + div {
+    background: #5e8dc8;
+}
+
+.chart .legend li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.chart .legend li > div {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 6px 2px 0;
+    background: #d13048;
+}
+
+.chart .legend li + li > div {
+    background: #5e8dc8;
 }
 
 
@@ -173,7 +208,7 @@ px      68    160    252    344    436    528    620    712
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     body {
         width: 712px;
-        padding: 48px 28px 60px;
+        padding: 48px 28px 28px;
     }
 }
 
@@ -188,7 +223,7 @@ px      68    160    252
 @media only screen and (max-width: 767px) {
     body {
         width: 252px;
-        padding: 48px 34px 60px;
+        padding: 48px 34px 34px;
     }
 }
 
@@ -203,7 +238,7 @@ px      68    160    252    344    436
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     body {
         width: 436px;
-        padding: 36px 22px 48px;
+        padding: 36px 22px 22px;
     }
 }
 
