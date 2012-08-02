@@ -1,4 +1,4 @@
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700&subset=latin,latin-ext');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:600,400italic|Bitter:400,400italic,700&subset=latin,latin-ext');
 
 /** Less Framework 4 by Joni Korpi (http://lessframework.com) License:
  * http://creativecommons.org/licenses/MIT/
@@ -48,7 +48,8 @@ strong {
 html {
     background: #e0e0e0;
     color: #444;
-    font: 16px/26px 'Open Sans', Calibri, Helvetica, Arial, sans-serif;
+    font: 16px/28px 'Bitter', Calibri, Helvetica, Arial, sans-serif;
+    font-family: Bitter;
     font-weight: 400;
 }
 
@@ -68,11 +69,11 @@ h1 {
 }
 
 p, ul {
-    margin-bottom: 26px;
+    margin-bottom: 28px;
 }
 
 .marginalia p, .marginalia ul {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
 }
 
 a, a:link, a:visited, .menu a:hover {
@@ -122,32 +123,32 @@ body:after {
 
 .menu {
     float: left;
-    width: 712px;
-    margin-left: 184px;
+    width: 804px;
+    margin-left: 92px;
     clear: both;
 }
 
 .menu li {
     display: inline;
-    margin-right: 16px;
+    margin-right: 28px;
     text-transform: uppercase;
     font-weight: 700;
 }
 
 .central {
     float: left;
-    width: 436px;
-    margin-left: 184px;
+    width: 528px;
+    margin-left: 92px;
 }
 
 .central ul {
     list-style: none;
-    text-indent: -24px;
+    text-indent: -16px;
 }
 
 .central li:before {
     content: '\2013';
-    padding-right: 12px;
+    padding-right: 8px;
 }
 
 .marginalia {
@@ -156,7 +157,7 @@ body:after {
     padding-top: 4px;
     margin-left: 24px;
     font-size: 13px;
-    line-height: 20px;
+    line-height: 21px;
 }
 
 .marginalia + .marginalia {
@@ -164,20 +165,8 @@ body:after {
     border-top: 6px solid #e0e0e0;
 }
 
-.chart .row {
-    width: 100%;
-    margin-bottom: 6px;
-}
-
-.chart .row > div {
-    height: 6px;
-    background: #d13048;
-    text-indent: -9999em;
-    margin-bottom: 6px;
-}
-
-.chart .row > div + div {
-    background: #5e8dc8;
+.chart .legend {
+    margin-bottom: 16px;
 }
 
 .chart .legend li {
@@ -194,6 +183,22 @@ body:after {
 }
 
 .chart .legend li + li > div {
+    background: #5e8dc8;
+}
+
+.chart .row {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.chart .row > div {
+    height: 6px;
+    background: #d13048;
+    text-indent: -9999em;
+    margin: 1px 0 4px;
+}
+
+.chart .row > div + div {
     background: #5e8dc8;
 }
 
