@@ -194,7 +194,7 @@ body:after {
 .chart .row > div {
     height: 6px;
     background: #d13048;
-    text-indent: -9999em;
+    text-indent: -999em;
     margin: 1px 0 4px;
 }
 
