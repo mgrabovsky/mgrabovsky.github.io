@@ -1,4 +1,4 @@
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:600,400italic|Bitter:400,400italic,700&subset=latin,latin-ext');
+@import url('http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700&subset=latin,latin-ext');
 
 /** Less Framework 4 by Joni Korpi (http://lessframework.com) License:
  * http://creativecommons.org/licenses/MIT/
@@ -48,8 +48,7 @@ strong {
 html {
     background: #e0e0e0;
     color: #444;
-    font: 16px/28px 'Bitter', Calibri, Helvetica, Arial, sans-serif;
-    font-family: Bitter;
+    font: 16px/28px 'PT Sans', Calibri, Helvetica, Arial, sans-serif;
     font-weight: 400;
 }
 
