@@ -173,7 +173,7 @@ body:after {
     margin-right: 20px;
 }
 
-.chart .legend li > div {
+.chart .legend li > span {
     display: inline-block;
     width: 6px;
     height: 6px;
@@ -181,7 +181,7 @@ body:after {
     background: #d13048;
 }
 
-.chart .legend li + li > div {
+.chart .legend li + li span {
     background: #5e8dc8;
 }
 
@@ -190,14 +190,18 @@ body:after {
     margin-bottom: 8px;
 }
 
-.chart .row > div {
-    height: 6px;
-    background: #d13048;
-    text-indent: -999em;
+.chart .row div {
+    width: 100%;
     margin: 1px 0 4px;
 }
 
-.chart .row > div + div {
+.chart .row div span {
+    display: block;
+    height: 6px;
+    background: #d13048;
+}
+
+.chart .row div + div span {
     background: #5e8dc8;
 }
 
