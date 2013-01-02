@@ -173,7 +173,7 @@ body:after {
     margin-right: 20px;
 }
 
-.chart .legend li > span {
+.chart .legend li span {
     display: inline-block;
     width: 6px;
     height: 6px;
