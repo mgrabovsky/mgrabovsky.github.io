@@ -39,10 +39,6 @@ body {
     background: #fafafa;
 }
 
-body.profile {
-    /*background: #fafafa url(fleurs.png) 48px 118px no-repeat;*/
-}
-
 h1 {
     display: inline;
     font: inherit;
