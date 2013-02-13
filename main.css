@@ -49,7 +49,7 @@ p, ul {
     margin-bottom: 28px;
 }
 
-.marginalia p, .marginalia ul {
+.marginalia p {
     margin-bottom: 21px;
 }
 
@@ -191,25 +191,23 @@ cols    1     2      3      4      5      6      7      8
 px      68    160    252    344    436    528    620    712
  */
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (max-width: 991px) {
     body {
         width: 712px;
         padding: 48px 28px 28px;
     }
-}
 
+    .menu {
+        width: 620px;
+    }
 
+    body > footer {
+        margin-left: 68px;
+    }
 
-/** Mobile Layout: 320px (24px G, 34px M)
----------------------------------------------
-cols    1     2      3
-px      68    160    252
- */
-
-@media only screen and (max-width: 767px) {
-    body {
-        width: 252px;
-        padding: 48px 34px 34px;
+    .marginalia {
+        padding-top: 20px;
+        border-top: 6px solid #e0e0e0;
     }
 }
 
@@ -221,10 +219,56 @@ cols    1     2      3      4      5
 px      68    160    252    344    436
  */
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     body {
         width: 436px;
         padding: 36px 22px 22px;
+    }
+
+    .menu, .central, .marginalia {
+        width: 436px;
+        margin-left: 0;
+    }
+
+    body > footer {
+        margin: 0;
+    }
+}
+
+
+
+/** Mobile Layout: 320px (24px G, 34px M)
+---------------------------------------------
+cols    1     2      3
+px      68    160    252
+ */
+
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 14px;
+        line-height: 24px
+    }
+
+    body {
+        width: 252px;
+        padding: 48px 34px 34px;
+    }
+
+    .menu, .central, .marginalia {
+        width: 252px;
+    }
+
+    .menu li {
+        margin-right: 14px;
+    }
+
+    .marginalia {
+        padding-top: 20px;
+        border-top: 6px solid #e0e0e0;
+    }
+
+    p, ul {
+        margin-bottom: 24px;
     }
 }
 
