@@ -11,12 +11,12 @@ sup, var, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table
 caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figure,
 figcaption, hgroup, menu, footer, header, nav, section, summary, time, mark, audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
-    font-size: 100%;
-    font: inherit;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	font-size: 100%;
+	font: inherit;
 }
 article, aside, canvas, figure, figure img, figcaption, hgroup, footer, header, nav,
 section, audio, video { display: block; }
@@ -28,45 +28,45 @@ strong { font-weight: 700; }
 
 /* Typography and colours */
 html {
-    background: #e0e0e0;
-    color: #444;
-    font: 16px/28px 'PT Sans', Calibri, Helvetica, Arial, sans-serif;
-    font-weight: 400;
+	background: #e0e0e0;
+	color: #444;
+	font: 16px/28px 'PT Sans', Calibri, Helvetica, Arial, sans-serif;
+	font-weight: 400;
 }
 
 body {
-    border-top: 6px solid #444;
-    background: #fafafa;
+	border-top: 6px solid #444;
+	background: #fafafa;
 }
 
 h1 {
-    display: inline;
-    font: inherit;
-    color: inherit;
+	display: inline;
+	font: inherit;
+	color: inherit;
 }
 
 p, ul {
-    margin-bottom: 28px;
+	margin-bottom: 28px;
 }
 
 .marginalia p {
-    margin-bottom: 21px;
+	margin-bottom: 21px;
 }
 
 a, a:link, a:visited, .menu a:hover {
-    color: #d13048;
-    -webkit-transition: color .2s ease-in-out;
-    -moz-transition: color .2s ease-in-out;
-    -o-transition: color .2 ease-in-out;
-    transition: color .2s ease-in-out;
+	color: #d13048;
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-o-transition: color .2 ease-in-out;
+	transition: color .2s ease-in-out;
 }
 
 .menu a {
-    color: #bbb;
+	color: #bbb;
 }
 
 a:hover, a:active {
-    color: #e38492;
+	color: #e38492;
 }
 
 /* Selection colours */
@@ -84,103 +84,103 @@ px      68    160    252    344    436    528    620    712    804    896
  */
 
 body {
-    width: 896px;
-    margin: 48px auto;
-    padding: 72px 48px 48px;
-    -webkit-text-size-adjust: 100%;
+	width: 896px;
+	margin: 48px auto;
+	padding: 72px 48px 48px;
+	-webkit-text-size-adjust: 100%;
 }
 
 body:after {
-    content: ".";
-    display: block;
-    visibility: hidden;
-    height: 0;
-    clear: both;
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
 }
 
 .menu {
-    float: left;
-    width: 804px;
-    margin-left: 92px;
-    clear: both;
+	float: left;
+	width: 804px;
+	margin-left: 92px;
+	clear: both;
 }
 
 .menu li {
-    display: inline;
-    margin-right: 28px;
-    text-transform: uppercase;
-    font-weight: 700;
+	display: inline;
+	margin-right: 28px;
+	text-transform: uppercase;
+	font-weight: 700;
 }
 
 .central {
-    float: left;
-    width: 528px;
-    margin-left: 92px;
+	float: left;
+	width: 528px;
+	margin-left: 92px;
 }
 
 .central ul {
-    list-style: none;
-    text-indent: -16px;
+	list-style: none;
+	text-indent: -16px;
 }
 
 .central li:before {
-    content: '\2013';
-    padding-right: 8px;
+	content: '\2013';
+	padding-right: 8px;
 }
 
 .marginalia {
-    float: left;
-    width: 252px;
-    padding-top: 4px;
-    margin-left: 24px;
-    font-size: 13px;
-    line-height: 21px;
+	float: left;
+	width: 252px;
+	padding-top: 4px;
+	margin-left: 24px;
+	font-size: 13px;
+	line-height: 21px;
 }
 
 .marginalia + .marginalia {
-    padding-top: 20px;
-    border-top: 6px solid #e0e0e0;
+	padding-top: 20px;
+	border-top: 6px solid #e0e0e0;
 }
 
 .chart .legend {
-    margin-bottom: 16px;
+	margin-bottom: 16px;
 }
 
 .chart .legend li {
-    display: inline;
-    margin-right: 20px;
+	display: inline;
+	margin-right: 20px;
 }
 
 .chart .legend li span {
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    margin: 0 8px 2px 0;
-    background: #d13048;
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	margin: 0 8px 2px 0;
+	background: #d13048;
 }
 
 .chart .legend li + li span {
-    background: #5e8dc8;
+	background: #5e8dc8;
 }
 
 .chart .row {
-    width: 100%;
-    margin-bottom: 8px;
+	width: 100%;
+	margin-bottom: 8px;
 }
 
 .chart .row div {
-    width: 100%;
-    margin: 1px 0 4px;
+	width: 100%;
+	margin: 1px 0 4px;
 }
 
 .chart .row div span {
-    display: block;
-    height: 4px;
-    background: #d13048;
+	display: block;
+	height: 4px;
+	background: #d13048;
 }
 
 .chart .row div + div span {
-    background: #5e8dc8;
+	background: #5e8dc8;
 }
 
 .chart .scale {
@@ -215,23 +215,23 @@ px      68    160    252    344    436    528    620    712
  */
 
 @media only screen and (max-width: 991px) {
-    body {
-        width: 712px;
-        padding: 48px 28px 28px;
-    }
+	body {
+		width: 712px;
+		padding: 48px 28px 28px;
+	}
 
-    .menu {
-        width: 620px;
-    }
+	.menu {
+		width: 620px;
+	}
 
-    body > footer {
-        margin-left: 68px;
-    }
+	body > footer {
+		margin-left: 68px;
+	}
 
-    .marginalia {
-        padding-top: 20px;
-        border-top: 6px solid #e0e0e0;
-    }
+	.marginalia {
+		padding-top: 20px;
+		border-top: 6px solid #e0e0e0;
+	}
 }
 
 
@@ -243,24 +243,24 @@ px      68    160    252    344    436
  */
 
 @media only screen and (max-width: 767px) {
-    body {
-        width: 436px;
-        padding: 36px 22px 22px;
-    }
+	body {
+		width: 436px;
+		padding: 36px 22px 22px;
+	}
 
-    .menu, .central, .marginalia {
-        width: 436px;
-        margin-left: 0;
-    }
+	.menu, .central, .marginalia {
+		width: 436px;
+		margin-left: 0;
+	}
 
-    body > footer {
-        margin: 0;
-    }
+	body > footer {
+		margin: 0;
+	}
 }
 
 @media only screen and (max-width: 767px) and (min-width: 480px) {
-    .chart .scale {
-    	padding-left: 108px;
+	.chart .scale {
+		padding-left: 108px;
 	}
 
 	.chart .scale > div {
@@ -281,31 +281,31 @@ px      68    160    252
  */
 
 @media only screen and (max-width: 480px) {
-    html {
-        font-size: 14px;
-        line-height: 24px
-    }
+	html {
+		font-size: 14px;
+		line-height: 24px
+	}
 
-    body {
-        width: 252px;
-        padding: 48px 34px 34px;
-    }
+	body {
+		width: 252px;
+		padding: 48px 34px 34px;
+	}
 
-    .menu, .central, .marginalia {
-        width: 252px;
-    }
+	.menu, .central, .marginalia {
+		width: 252px;
+	}
 
-    .menu li {
-        margin-right: 14px;
-    }
+	.menu li {
+		margin-right: 14px;
+	}
 
-    .marginalia {
-        padding-top: 20px;
-        border-top: 6px solid #e0e0e0;
-    }
+	.marginalia {
+		padding-top: 20px;
+		border-top: 6px solid #e0e0e0;
+	}
 
-    p, ul {
-        margin-bottom: 24px;
-    }
+	p, ul {
+		margin-bottom: 24px;
+	}
 }
 
