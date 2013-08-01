@@ -155,7 +155,7 @@ body:after {
     display: inline-block;
     width: 6px;
     height: 6px;
-    margin: 0 6px 2px 0;
+    margin: 0 8px 2px 0;
     background: #d13048;
 }
 
@@ -175,12 +175,35 @@ body:after {
 
 .chart .row div span {
     display: block;
-    height: 6px;
+    height: 4px;
     background: #d13048;
 }
 
 .chart .row div + div span {
     background: #5e8dc8;
+}
+
+.chart .scale {
+	height: 4px;
+	margin-top: 18px;
+	padding-left: 62px;
+	border-top: 1px solid #bbb;
+	border-right: 1px solid #bbb;
+	border-left: 1px solid #bbb;
+}
+
+.chart .scale > div {
+	width: 125px;
+	height: 100%;
+	border-right: 1px solid #bbb;
+	border-left: 1px solid #bbb;
+}
+
+.chart .scale > div > div {
+	width: 1px;
+	padding-left: 61px;
+	height: 100%;
+	border-right: 1px solid #bbb;
 }
 
 
@@ -233,6 +256,20 @@ px      68    160    252    344    436
     body > footer {
         margin: 0;
     }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+    .chart .scale {
+    	padding-left: 108px;
+	}
+
+	.chart .scale > div {
+		width: 217px;
+	}
+
+	.chart .scale > div > div {
+		padding-left: 107px;
+	}
 }
 
 
