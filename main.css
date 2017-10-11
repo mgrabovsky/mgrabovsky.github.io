@@ -65,10 +65,8 @@ p, ul {
 
 a, a:link, a:visited, .menu a:hover {
     color: #d13048;
-    -webkit-transition: color .2s ease-in-out;
-    -moz-transition: color .2s ease-in-out;
-    -o-transition: color .2 ease-in-out;
-    transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out, border-color .2s ease-in-out;
+    border-bottom: 1px solid #ddd;
 }
 
 .menu a {
@@ -77,6 +75,11 @@ a, a:link, a:visited, .menu a:hover {
 
 a:hover, a:active {
     color: #e38492;
+    border-bottom-color: #e38492;
+}
+
+.menu a:hover, .menu a:active {
+    border-bottom-color: #e38492;
 }
 
 /* Selection colours */
