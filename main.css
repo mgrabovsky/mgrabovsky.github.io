@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400&subset=latin,latin-ext');
 
 /* Less Framework 4 by Joni Korpi (http://lessframework.com)
  * License: https://creativecommons.org/licenses/MIT/
@@ -28,40 +28,15 @@ strong { font-weight: 700; }
 
 /* Typography and colours */
 html {
-    background: #e0e0e0;
+    background-color: #fafafa;
     color: #444;
     font: 18px/1.5em 'PT Sans', Calibri, Helvetica, Arial, sans-serif;
     font-weight: 400;
 }
 
-body {
-    border-top: 6px solid #444;
-    background: #fafafa;
-}
-
-h1 {
-    display: inline;
-    font: inherit;
-    color: inherit;
-}
-
-h2 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 14px;
-    border-top: 6px solid #ddd;
-    padding-top: 14px;
-}
-
 i { font-style: italic; }
 
-p, ul {
-    margin-bottom: 28px;
-}
-
-.marginalia p {
-    margin-bottom: 21px;
-}
+p { margin-bottom: 28px; }
 
 a, a:link, a:visited, .menu a:hover {
     color: #d13048;
@@ -69,242 +44,20 @@ a, a:link, a:visited, .menu a:hover {
     border-bottom: 1px solid #ddd;
 }
 
-.menu a {
-    color: #bbb;
-}
-
 a:hover, a:active {
     color: #e38492;
     border-bottom-color: #e38492;
 }
 
-.menu a:hover, .menu a:active {
-    border-bottom-color: #e38492;
-}
-
-/* Selection colours */
 ::selection { background: rgba(38,164,166,.4); color: #fafafa; }
 ::-moz-selection { background: rgba(38,164,166,.4); color: #fafafa; }
 img::selection { background: transparent; }
 img::-moz-selection { background: transparent; }
 body { -webkit-tap-highlight-color: rgba(38,164,166,.4); }
 
-
-/** Default Layout: 992px (24px G, 48 M)
--------------------------------------------------------------------------------
-cols    1     2      3      4      5      6      7      8      9      10
-px      68    160    252    344    436    528    620    712    804    896
- */
-
 body {
-    width: 896px;
-    margin: 48px auto;
-    padding: 72px 48px 48px;
+    width: 80%;
+    max-width: 28rem;
+    margin: 4rem auto;
     -webkit-text-size-adjust: 100%;
 }
-
-body:after {
-    content: ".";
-    display: block;
-    visibility: hidden;
-    height: 0;
-    clear: both;
-}
-
-.menu {
-    float: left;
-    width: 804px;
-    margin-left: 92px;
-    clear: both;
-}
-
-.menu li {
-    display: inline;
-    margin-right: 28px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-.central {
-    float: left;
-    width: 528px;
-    margin-left: 92px;
-}
-
-.central ul {
-    list-style: none;
-    text-indent: -16px;
-}
-
-.central li:before {
-    content: '\2013';
-    padding-right: 8px;
-}
-
-.marginalia {
-    float: left;
-    width: 252px;
-    padding-top: 4px;
-    margin-left: 24px;
-    font-size: 15px;
-    line-height: 1.5em;
-}
-
-.marginalia + .marginalia {
-    padding-top: 20px;
-    border-top: 6px solid #e0e0e0;
-}
-
-.chart .legend {
-    margin-bottom: 16px;
-}
-
-.chart .legend li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.chart .legend li span {
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    margin: 0 8px 2px 0;
-    background: #d13048;
-}
-
-.chart .legend li + li span {
-    background: #5e8dc8;
-}
-
-.chart .row {
-    width: 100%;
-    margin-bottom: 8px;
-}
-
-.chart .row div {
-    display: block;
-    height: 4px;
-    margin: 6px 0 2px;
-    background-image: url('data:image/svg+xml;utf8, \
-    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="1"> \
-        <rect fill="%23f2c6cd" x="0" y="0" width="16.8" height="1"/> \
-        <rect fill="%23eaa0ab" x="20.8" y="0" width="16.8" height="1"/> \
-        <rect fill="%23e17b8a" x="41.6" y="0" width="16.8" height="1"/> \
-        <rect fill="%23d95569" x="62.4" y="0" width="16.8" height="1"/> \
-        <rect fill="%23d13048" x="83.2" y="0" width="16.8" height="1"/></svg>');
-    background-size: 252px;
-    background-repeat: repeat-y;
-    text-indent: -9999em;
-}
-
-.chart .row div + div {
-    background-image: url('data:image/svg+xml;utf8, \
-    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="1"> \
-        <rect fill="%23d3dff0" x="0" y="0" width="16.8" height="1"/> \
-        <rect fill="%23b5cbe6" x="20.8" y="0" width="16.8" height="1"/> \
-        <rect fill="%2398b6dc" x="41.6" y="0" width="16.8" height="1"/> \
-        <rect fill="%237ba1d2" x="62.4" y="0" width="16.8" height="1"/> \
-        <rect fill="%235e8dc8" x="83.2" y="0" width="16.8" height="1"/></svg>');
-}
-
-.chart .row div.span-1 { width: 20%; }
-.chart .row div.span-2 { width: 40%; }
-.chart .row div.span-3 { width: 60%; }
-.chart .row div.span-4 { width: 80%; }
-.chart .row div.span-5 { width: 100%; }
-
-
-
-/** Tablet Layout: 768px (24px G, 28px M)
------------------------------------------------------------------
-cols    1     2      3      4      5      6      7      8
-px      68    160    252    344    436    528    620    712
- */
-
-@media only screen and (max-width: 991px) {
-    body {
-        width: 712px;
-        padding: 48px 28px 28px;
-    }
-
-    .menu {
-        width: 620px;
-    }
-
-    body > footer {
-        margin-left: 68px;
-    }
-
-    .marginalia {
-        padding-top: 20px;
-        border-top: 6px solid #e0e0e0;
-    }
-}
-
-
-
-/** Wide Mobile Layout: 480px (24px G, 22px M)
-------------------------------------------------------------
-cols    1     2      3      4      5
-px      68    160    252    344    436
- */
-
-@media only screen and (max-width: 767px) {
-    body {
-        width: 436px;
-        padding: 36px 22px 22px;
-    }
-
-    .menu, .central, .marginalia {
-        width: 436px;
-        margin-left: 0;
-    }
-
-    body > footer {
-        margin: 0;
-    }
-}
-
-@media only screen and (max-width: 767px) and (min-width: 480px) {
-    .chart .row div {
-        background-size: 436px;
-    }
-}
-
-
-
-/** Mobile Layout: 320px (24px G, 34px M)
----------------------------------------------
-cols    1     2      3
-px      68    160    252
- */
-
-@media only screen and (max-width: 480px) {
-    html {
-        font-size: 14px;
-        line-height: 24px
-    }
-
-    body {
-        width: 252px;
-        padding: 48px 34px 34px;
-    }
-
-    .menu, .central, .marginalia {
-        width: 252px;
-    }
-
-    .menu li {
-        margin-right: 14px;
-    }
-
-    .marginalia {
-        padding-top: 20px;
-        border-top: 6px solid #e0e0e0;
-    }
-
-    p, ul {
-        margin-bottom: 24px;
-    }
-}
-
