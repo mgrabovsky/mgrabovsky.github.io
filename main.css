@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400&subset=latin,latin-ext');
 
-/* Less Framework 4 by Joni Korpi (http://lessframework.com)
- * License: https://creativecommons.org/licenses/MIT/
- *  &
- * Reset (based on original, combined with Eric Meyer's Reset CSS v2.0
- */
+/* Reset (based on original, combined with Eric Meyer's Reset CSS v2.0 */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
 abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub,
 sup, var, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
@@ -30,8 +26,15 @@ strong { font-weight: 700; }
 html {
     background-color: #fafafa;
     color: #444;
-    font: 18px/1.5em 'PT Sans', Calibri, Helvetica, Arial, sans-serif;
+    font: 1.12rem/1.5em 'PT Sans', Calibri, Helvetica, Arial, sans-serif;
     font-weight: 400;
+}
+
+body {
+    width: 80%;
+    max-width: 50ch;
+    margin: 4rem auto;
+    -webkit-text-size-adjust: 100%;
 }
 
 i { font-style: italic; }
@@ -54,10 +57,3 @@ a:hover, a:active {
 img::selection { background: transparent; }
 img::-moz-selection { background: transparent; }
 body { -webkit-tap-highlight-color: rgba(38,164,166,.4); }
-
-body {
-    width: 80%;
-    max-width: 28rem;
-    margin: 4rem auto;
-    -webkit-text-size-adjust: 100%;
-}
