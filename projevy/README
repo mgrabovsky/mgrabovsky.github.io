@@ -1,6 +1,0 @@
-Compile with
-
-```
-$ pandoc input.mkd -o output.html -V title:"Title of speech" -t html5 --template komtr.template.html
-```
-
