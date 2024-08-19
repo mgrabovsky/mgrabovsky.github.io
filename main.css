@@ -16,7 +16,6 @@ audio, video {
 }
 article, aside, canvas, figure, figure img, figcaption, hgroup, footer, header, main,
 nav, section, audio, video { display: block; }
-ul, ol { list-style: none; }
 a img { border: 0; }
 a, a:hover, a:active, a:link, a:visited { color: inherit; text-decoration: none; }
 em { font-style: italic; }
@@ -37,9 +36,11 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
+b { font-weight: bold; }
 i { font-style: italic; }
-
-p { margin-bottom: 28px; }
+p { margin-bottom: 1.25em; }
+ul { margin-bottom: 1.25em; padding-left: 1em; }
+li { padding-left: .5em; }
 
 a, a:link, a:visited, .menu a:hover {
     color: #d13048;
